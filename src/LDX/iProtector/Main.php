@@ -307,11 +307,11 @@ class Main extends PluginBase implements Listener {
           $o = false;
         }
         if($area->isWhitelisted(strtolower($p->getName()))) {
-          $o = true;
+          $o = false;
           break;
         }
         if(!$area->getFlag("edit") && $g) {
-          $o = true;
+          $o = false;
           break;
         }
       }
